@@ -181,7 +181,7 @@ nav {
 }
 
 .banner-section .wrapper { 
-  padding-top: 60%;
+  min-height: 350px;
   position: relative;
 }
 
@@ -240,12 +240,13 @@ h2 {
   transform: translateY(-50%);
 }
 
-.prev { 
+.prev,
+.next { 
   width: 20px;
   height: 20px;
-  left: 0;
 }
 
+.prev { left: 0; }
 .next { right: 0; }
 
 .prev::before,
@@ -263,6 +264,12 @@ h2 {
 .next { background: #000; }
 
 .banner-content .read-more { padding-bottom: 20px; }
+
+.banner-content {
+  position: absolute;
+  bottom: 30px;
+}
+
 /*banner section end*/
 
 /*card section start*/
