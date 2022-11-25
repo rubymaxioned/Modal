@@ -261,10 +261,53 @@ h2 {
 
 .prev,
 .next { background: #000; }
+
+.banner-content .read-more { padding-bottom: 20px; }
 /*banner section end*/
 
+/*card section start*/
+.card-section { padding-top: 20px; }
 
+h3 { 
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
+.card-content p,
+.latest-section p {
+  font-size: 11px;
+  line-height: 19px;
+  text-align: justify;
+}
+
+.card-section .wrapper > figure { margin-bottom: 20px; }
+
+.card-content p:nth-of-type(1) { margin-bottom: 7px; }
+.card-content p:nth-of-type(2) { margin-bottom: 10px; }
+
+.card-content .read-more a,
+.latest-section .read-more a { 
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.card-section-right figure { margin-bottom: 20px; }
+
+h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.latest-section p { margin-bottom: 10px; }
+/*card section end*/
 
 
 
@@ -276,9 +319,12 @@ h2 {
   footer styling starts here
 =================================*/ 
 
+footer figure {
+  max-width: 40%;
+  margin: 0 auto;
+}
 
-
-
+footer p { font-size: 9px; }
 
 
 
