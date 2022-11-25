@@ -111,11 +111,12 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-h1 img { width: 40%; }
+header { width: 100%; }
+h1 { max-width: 40%; }
 
 .hamburger {
-  width: 16px;
-  height: 10px;
+  width: 10px;
+  height: 5px;
   padding: 8px;
   border-radius: 3px;
   display: flex;
@@ -145,6 +146,7 @@ nav { display: flex; }
 header {
   position: absolute;
   top: 10px;
+  justify-content: space-between;
 }
 
 
@@ -184,6 +186,21 @@ h2 {
   background: transparent;
   border: 1px solid #ff0000;
 }
+
+.icon {
+  display: inline-block;
+  position: relative;
+  text-indent: -9999px;
+}
+
+.icon::before {
+  position: absolute;
+  font-family: "FontAwesome";
+  left: 0;
+  text-indent: 0;
+}
+
+.btn::before { content: '\f002' }
 /*banner section end*/
 
 
