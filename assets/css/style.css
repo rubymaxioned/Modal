@@ -113,8 +113,39 @@ li {
 =================================*/
 h1 img { width: 40%; }
 
+.hamburger {
+  width: 16px;
+  height: 10px;
+  padding: 8px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
 
+.bar {
+  width: 19px;
+  height: 2px;
+  padding: 0px;
+  margin: 1.5px;
+  display: block;
+  background-color: #3B3B3B;
+  text-indent: -9999px
+}
 
+nav ul li:not(li:last-child),
+.search-text { display: none; }
+
+header,
+nav { display: flex; }
+
+header {
+  position: absolute;
+  top: 10px;
+}
 
 
 /*=================================
@@ -125,7 +156,35 @@ h1 img { width: 40%; }
   main styling starts here
 =================================*/
 
+/*banner section start*/
+.banner-section {
+  width: 100%;
+  height: auto;
+  padding-top: 60%;
+  background: url(/assets/Images/banner.jpg) no-repeat center center/cover;
+}
 
+h2 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.banner-content p {
+  color: #A4A6A9;
+  font-size: 9px;
+}
+
+.read-more a {
+  color: #C0C5C6;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding: 5px 4%;
+  background: transparent;
+  border: 1px solid #ff0000;
+}
+/*banner section end*/
 
 
 
