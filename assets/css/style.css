@@ -142,11 +142,6 @@ nav ul li:not(li:last-child),
 header .wrapper,
 nav { display: flex; }
 
-/* header {
-  position: absolute;
-  top: 10px;
-} */
-
 header {
   position: absolute;
     top: 10px;
@@ -164,6 +159,7 @@ nav {
   align-items: center; 
   gap: 10px;
  }
+ 
 /*=================================
   Header styling ends here
 =================================*/  
@@ -188,8 +184,9 @@ nav {
 h2 {
   margin-bottom: 5px;
   color: #fff;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
+  letter-spacing: 1px;
   text-transform: capitalize;
 }
 
@@ -244,6 +241,7 @@ h2 {
 .next { 
   width: 20px;
   height: 20px;
+  padding: 3px;
 }
 
 .prev { left: 0; }
@@ -334,6 +332,7 @@ footer figure {
 footer p { 
   color: #999;
   font-size: 9px;
+  text-align: center;
 }
 
 /* .facebook { content: '\f09a';} */
@@ -352,11 +351,11 @@ footer p {
   top: 50%;
   left: 50%;
   font-family: "FontAwesome";
-  font-size: 10px;
   text-indent: 0;
   transform: translate(-50%, -50%);
 }
 
+.social-icons li a::before { font-size: 9px; }
 .facebook::before { content: '\f09a';}
 .twitter::before { content: '\f099'; }
 .ball::before { content: '\f1e3'; }
