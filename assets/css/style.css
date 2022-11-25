@@ -113,27 +113,9 @@ li {
 =================================*/
 h1 { max-width: 40%; }
 
-.hamburger {
-  width: 10px;
-  height: 5px;
-  padding: 8px;
-  border-radius: 3px;
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  flex-direction: column;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.bar {
-  width: 19px;
-  height: 2px;
-  padding: 0px;
-  margin: 1.5px;
-  display: block;
-  background-color: #3B3B3B;
-  text-indent: -9999px
+.bar::before {
+  color: #fff;
+  content: '\f0c9';
 }
 
 nav ul li:not(li:last-child),
@@ -157,7 +139,7 @@ header .wrapper {
 
 nav {
   align-items: center; 
-  gap: 10px;
+  gap: 15px;
  }
  
 /*=================================
@@ -385,9 +367,39 @@ footer figure,
 =================================*/ 
 
 /*media query starts*/
+/*media query for 480px starts here*/
+@media only screen and (min-width: 480px) {
+.icon::before { font-size: 18px; }
+nav { gap: 20px; }
+.card-content p, .latest-section p { line-height: 23px; }
+.card-content p:nth-of-type(2) { margin-bottom: 15px; }
+} 
+
+/*media query for 540px starts here*/
+@media only screen and (min-width: 540px) {
+
+
+
+} 
+
+/*media query for 768px starts here*/
+@media only screen and (min-width: 768px) {
+
+
+
+} 
+
 /*media query for 995px starts here*/
-@media only screen and (max-width: 995px) {
+@media only screen and (min-width: 995px) {
 
 
 
-}  
+} 
+
+/*media query for 1024px starts here*/
+@media only screen and (min-width: 1024px) {
+
+
+
+} 
+
