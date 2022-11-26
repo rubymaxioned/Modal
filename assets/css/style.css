@@ -327,10 +327,10 @@ h4 {
 
 .modal { 
   padding: 40px 3% 15px; 
-  display: none;
+  /* display: none; */
   position: absolute;
-  top: 0px;
-  right: 10%;
+  top: 202%;
+  right: 5%;
 }
 
 .close {
@@ -358,7 +358,7 @@ h4 {
 .modal ul li:nth-of-type(2) { background: #0474F0; }
 
 .modal ul li a { color: #fff; }
-.card-section-right { position: relative; }
+/* .card-section-right { position: relative; } */
 
 .show { display: block; }
 .hide { display: none; }
