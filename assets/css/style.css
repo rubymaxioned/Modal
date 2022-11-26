@@ -441,6 +441,29 @@ form input { width: 80%; }
   top: 49px;
   left: 46%;
 } */
+
+nav { position: relative; }
+
+nav ul {
+  position: absolute;
+  top: 47px;
+  right: 0px;
+  gap: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+nav ul li:nth-of-type(4) { position: relative; }
+
+.sub-menu {
+  position: absolute;
+  top: 30px;
+  right: 0px;
+  flex-direction: column;
+}
+
+nav ul li a { color: #fff; }
+}
 } 
 
 /*media query for 995px starts here*/
