@@ -483,19 +483,46 @@ nav ul li a {
 .search-text { display: none; }
 
 nav {
+  display: none;
   position: absolute;
-    right: 0px;
-    top: 60px
+  right: 0px;
+  top: 60px
 }
 
 header .wrapper { position: relative; }
 nav ul { gap: 20px; } 
+
+.card-section .wrapper {
+  width: 100%;
+  display: flex;
+}
+
+.card-section figure,
+.card-section-right { flex-basis: 50%; }
+
+.card-content p {
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.card-content { padding: 20px 5%; }
+.card-content .read-more { margin-bottom: 10px; }
+
+.card-section figure img { 
+  min-height: 100%;
+  object-fit: fill;
+}
 }
 
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
+.hamburger { display: none; }
 
+nav { 
+  display: block;
+  position: static;
+}
 
 
 } 
