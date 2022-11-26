@@ -251,6 +251,18 @@ h2 {
   bottom: 30px;
 }
 
+.bar,
+.btn {
+  width: 30px;
+  height: 30px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 /*banner section end*/
 
 /*card section start*/
@@ -442,7 +454,7 @@ form input { width: 80%; }
   left: 46%;
 } */
 
-nav { position: relative; }
+/* nav { position: relative; }
 
 nav ul {
   position: absolute;
@@ -451,7 +463,7 @@ nav ul {
   gap: 20px;
   text-transform: uppercase;
   font-size: 13px;
-}
+} */
 
 nav ul li:nth-of-type(4) { position: relative; }
 
@@ -462,9 +474,24 @@ nav ul li:nth-of-type(4) { position: relative; }
   flex-direction: column;
 }
 
-nav ul li a { color: #fff; }
+nav ul li a { 
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
 }
-} 
+
+.search-text { display: none; }
+
+nav {
+  position: absolute;
+    right: 0px;
+    top: 60px
+}
+
+header .wrapper { position: relative; }
+nav ul { gap: 20px; } 
+}
+
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
