@@ -358,6 +358,10 @@ h4 {
 .modal ul li:nth-of-type(2) { background: #0474F0; }
 
 .modal ul li a { color: #fff; }
+.card-section-right { position: relative; }
+
+.show { display: block; }
+.hide { display: none; }
 
 /*card section end*/
 
