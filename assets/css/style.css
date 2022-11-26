@@ -476,7 +476,7 @@ nav ul li:nth-of-type(4) { position: relative; }
 
 nav ul li a { 
   font-size: 12px;
-  color: #fff;
+  color: #999;
   text-transform: uppercase;
 }
 
@@ -524,8 +524,22 @@ nav {
   position: static;
 }
 
+header .wrapper { 
+  flex-direction:  column;
+  gap: 20px;
+}
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon::before { font-size: 15px; }
+nav ul li a { padding: 5px 10%; }
+.sub-menu { display: none; }
 } 
+
 
 /*media query for 1024px starts here*/
 @media only screen and (min-width: 1024px) {
@@ -534,3 +548,29 @@ nav {
 
 } 
 
+/*media query for 1536px starts here*/
+@media only screen and (min-width: 1536px) {
+
+.banner-section .wrapper { min-height: 632px; }
+header { padding-top: 56px; }
+header .wrapper { gap: 34px; }
+
+.nav-container {
+  width: 543px;
+  justify-content: space-between;
+}
+
+nav { flex-basis: 90%; }
+nav ul li { flex: 1 1 20%; }
+
+nav ul li a {
+  font-size: 10px;
+  letter-spacing: 1px;
+}
+
+.banner-section .wrapper { width: 80%; }
+h2 { font-size: 84px; }
+.banner-content p {font-size: 29px; }
+.read-more a { padding: 14px 7.5%; }
+.banner-content { bottom: 98px; } 
+} 
