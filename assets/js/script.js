@@ -8,6 +8,7 @@ readBtn.addEventListener('click', function () {
     modal.classList.add('show');
 })
 
+
 topClose.addEventListener('click', function () {
     modal.classList.remove('show');
 })
@@ -16,6 +17,12 @@ bottomClose.addEventListener('click', function () {
     modal.classList.remove('show');
 })
 
-window.addEventListener('click',function(){
-    
+window.addEventListener('keydown', function (e) {
+    if (e.keyCode == 27) {
+        modal.classList.remove('show');
+    }
+})
+
+window.addEventListener('click', function () {
+    console.log(event.target.tagName);
 })
