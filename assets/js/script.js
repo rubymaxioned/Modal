@@ -1,11 +1,13 @@
-var readBtn = document.querySelector(".card-content .read-more");
-var modal = document.querySelector(".modal");
+var readBtn = document.querySelectorAll(".read-more");
+var modal = document.querySelector(".modal-box");
 var topClose = document.querySelector(".close");
-var bottomClose = document.querySelector(".modal ul li:nth-of-type(1)");
+var bottomClose = document.querySelector(".modal-box ul li:nth-of-type(1)");
 // console.log(bottomClose);
 
-readBtn.addEventListener('click', function () {
-    modal.classList.add('show');
+readBtn.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        modal.classList.add('show');
+    })
 })
 
 
@@ -23,6 +25,8 @@ window.addEventListener('keydown', function (e) {
     }
 })
 
-window.addEventListener('click', function () {
-    console.log(event.target.tagName);
+window.addEventListener('click', function (e) {
+    if (e.target == modal) {
+        modal.classList.remove('show');
+    }
 })
