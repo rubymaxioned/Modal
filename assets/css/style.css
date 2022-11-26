@@ -311,6 +311,54 @@ h4 {
   display: flex;
   justify-content: center;
 }
+
+.close::before {
+  color: #999; 
+  content: '\f00d';
+}
+
+.modal { 
+  width: 400px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  position: relative;
+  width: 400px;
+  background-color: #fff;
+}
+
+.modal { 
+  padding: 40px 3% 15px; 
+  display: none;
+  position: absolute;
+  top: 0px;
+  right: 10%;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 23px;
+}
+
+.modal ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.modal ul li {
+  padding: 5px 2%;
+  border-radius: 3px;
+  background-color: #666;
+  color: #fff;
+}
+
+.modal ul li:nth-of-type(1) { background: #676E76; }
+.modal ul li:nth-of-type(2) { background: #0474F0; }
+
+.modal ul li a { color: #fff; }
+
 /*card section end*/
 
 
