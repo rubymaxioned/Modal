@@ -139,9 +139,12 @@ header .wrapper {
 }
 
 nav {
+  display: none;
   align-items: center; 
   gap: 15px;
- }
+}
+
+.search-text { display: none; }
  
 /*=================================
   Header styling ends here
@@ -170,8 +173,10 @@ h2 {
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 1px;
-  text-transform: capitalize;
 }
+
+h2::first-letter,
+.banner-content p::first-letter { text-transform: uppercase; }
 
 .banner-content p {
   margin-bottom: 10px;
@@ -260,7 +265,7 @@ h2 {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 10px;
+  /* gap: 10px; */
 }
 
 /*banner section end*/
@@ -285,14 +290,23 @@ h3 {
   text-align: justify;
 }
 
-.card-section .wrapper > figure { margin-bottom: 20px; }
+.card-section .wrapper,
+.card-section-right { 
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-section { padding: 20px 0; }
+
+/* .card-section .wrapper > figure { margin-bottom: 20px; } */
 .card-content p:nth-of-type(1) { margin-bottom: 7px; }
 .card-content p:nth-of-type(2) { margin-bottom: 10px; }
 
 .card-content .read-more a,
 .latest-section .read-more a { color: #333; }
 
-.card-section-right figure { margin-bottom: 20px; }
+/* .card-section-right figure { margin-bottom: 20px; } */
 
 h4 {
   margin-bottom: 10px;
@@ -303,11 +317,9 @@ h4 {
   text-transform: uppercase;
 }
 
-.latest-section p { margin-bottom: 10px; }
-
 .card-content .read-more,
 .latest-section .read-more { 
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
   display: flex;
   justify-content: center;
 }
@@ -370,6 +382,16 @@ h4 {
 .hide { display: none; }
 
 /*card section end*/
+
+/*latest section start*/
+.latest-section { 
+  padding: 20px 0;
+  background-color: #F4F4F2;
+}
+
+.latest-section p { margin-bottom: 10px; }
+/*latest section end*/
+
 
 
 
@@ -451,10 +473,10 @@ nav { gap: 20px; }
   font-size: 13px;
   line-height: 26px;
 }
-.card-section .wrapper > figure,
-.card-section-right figure { margin-bottom: 30px; }
+/* .card-section .wrapper > figure,
+.card-section-right figure { margin-bottom: 30px; } */
 
-.card-section { padding-top: 35px; }
+/* .card-section { padding-top: 35px; } */
 .card-content p:nth-of-type(2) { margin-bottom: 15px; }
 
 .read-more a {
@@ -465,13 +487,13 @@ nav { gap: 20px; }
 h3,
 h4 { margin-bottom: 15px; }
 
-.card-content .read-more,
-.latest-section .read-more { margin-bottom: 50px; }
+/* .card-content .read-more,
+.latest-section .read-more { margin-bottom: 50px; } */
 
 footer { padding: 30px 0; }
-
+/* 
 footer figure,
-.footer-bottom p { margin-bottom: 15px; }
+.footer-bottom p { margin-bottom: 15px; } */
 
 footer p { font-size: 10px; }
 .social-icons li a { border: 2px solid #555; }
@@ -479,9 +501,11 @@ footer p { font-size: 10px; }
 
 /*media query for 540px starts here*/
 @media only screen and (min-width: 540px) {
+  .card-section .wrapper,
+  .card-section-right { gap: 30px; }
 
-
-
+.card-section,
+.latest-section { padding: 35px 0; }
 } 
 
 /*media query for 768px starts here*/
@@ -571,6 +595,14 @@ nav ul { gap: 20px; }
   min-height: 100%;
   object-fit: fill;
 }
+
+.card-section .wrapper {
+  flex-direction: row;
+  gap: 0;
+}
+
+.card-section { padding:  0; }
+.latest-section .wrapper { width: 70%; }
 }
 
 
@@ -627,12 +659,32 @@ nav ul li a {
   letter-spacing: 1px;
 }
 
-.banner-section .wrapper { width: 80%; }
+.banner-section .wrapper { width: 100%; }
+
 h2 { font-size: 84px; }
 .banner-content p {font-size: 29px; }
 .read-more a { padding: 14px 7.5%; }
-.banner-content { bottom: 98px; } 
-.card-section .wrapper { max-width: 1600px; }
+
+.banner-content { 
+  padding-left: 156px;
+  bottom: 94px;
+} 
+
+.arrow { 
+  top: initial;
+  bottom: 263px;
+  transform: none;
+}
+
+.prev,
+.next { 
+  width: 24px;
+  height: 40px;
+}
+
+.card-section .wrapper,
+.banner-section .wrapper { max-width: 1600px; }
+
 .card-section { padding: 0px; }
 .card-content { padding: 65px 8.5%; }
 
@@ -652,7 +704,7 @@ h3 {
 .card-content .read-more { justify-content: flex-start;}
 
 .latest-section .read-more { 
-  margin-bottom: 76px;
+  /* margin-bottom: 76px; */
   justify-content: center;
 }
 
@@ -676,10 +728,13 @@ h4 { font-size: 26px; }
 .card-section .wrapper > figure,
 .card-section-right figure { margin-bottom: 0px; }
 
-.latest-section { padding-top: 80px; }
+.latest-section { padding: 80px 0 75px; }
 
 .latest-section p { 
   margin-bottom: 16px;
   text-align: center;
 }
+
+.read-more a { border: 2px solid #ff0000; }
+
 } 
