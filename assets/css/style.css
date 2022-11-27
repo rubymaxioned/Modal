@@ -139,7 +139,7 @@ header .wrapper {
 }
 
 nav {
-  display: none;
+  /* display: none; */
   align-items: center; 
   gap: 15px;
 }
