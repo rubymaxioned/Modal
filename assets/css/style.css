@@ -153,7 +153,10 @@ nav ul {
 
 /* .nav-link { display: none; } */
 .search-text { display: none; }
- 
+ .dropdown::after {
+  content: '\f078';
+  font-family: "FontAwesome";
+ }
 /*=================================
   Header styling ends here
 =================================*/  
