@@ -35,9 +35,10 @@ window.addEventListener('click', function (e) {
 var searchBtn = document.querySelector('.search-button');
 var searchText = document.querySelector('.search-text');
 var nav = document.querySelector('nav ul');
+var dropdown = document.querySelector('.dropdown');
+console.log(dropdown);
 
 searchBtn.addEventListener('click', function () {
-    console.log("working");
     searchText.classList.toggle('show');
 })
 
@@ -45,10 +46,11 @@ searchBtn.addEventListener('click', function () {
 var hamburger = document.querySelector('.bar');
 var cross = document.querySelector('.hamburger .cross');
 var nav = document.querySelector('nav');
-console.log(nav);
+var subMenu = document.querySelector('.sub-menu');
+var dropDown = document.querySelector('.dropdown')
+console.log(subMenu);
 
 hamburger.addEventListener('click', function () {
-    console.log("working");
     hamburger.classList.add('hide');
     cross.classList.add('show');
     nav.classList.add('show');
@@ -58,4 +60,12 @@ cross.addEventListener('click', function () {
     cross.classList.remove('show');
     hamburger.classList.remove('hide');
     nav.classList.remove('show');
+})
+
+dropDown.addEventListener('click', function () {
+    // subMenu.forEach(function(list){
+    //     list.classList.add('show');
+    //     console.log(list);
+    // })
+    subMenu.classList.toggle('active');
 })
