@@ -150,7 +150,8 @@ header .wrapper {
   justify-content: space-between;
 }
 
-nav { 
+nav {
+  display: none;
   position: absolute;
   align-items: center;
   top: 40px;
@@ -185,7 +186,7 @@ nav {
   width: 95px;
   display: none;
   position: absolute;
-  top: 54px;
+  top: 65px;
   right: 75px;
   flex-direction: column;
 }
@@ -639,6 +640,12 @@ header .wrapper { position: relative; }
 
 .card-section { padding:  0; }
 .latest-section .wrapper { width: 70%; }
+
+.nav-anc.active,
+.nav-anc:hover { 
+  border: 2px solid #999;
+  color: #ff0000;
+}
 }
 
 
@@ -674,6 +681,13 @@ header .wrapper {
 .nav-anc:hover { 
   border: 2px solid #999;
   color: #ff0000;
+}
+
+nav{ top: 0; }
+
+nav ul {     
+  flex-direction: row;
+  align-items: center;
 }
 
 nav ul li a {
