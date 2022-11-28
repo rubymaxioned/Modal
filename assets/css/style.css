@@ -132,12 +132,12 @@ nav {
 }
 
 nav ul {
-  display: none;
-  position: absolute;
+  /* display: none; */
   top: 30px;
   right: 0;
   flex-direction: column;
   align-items: center;
+  display: flex;
 }
 
 header .wrapper {
@@ -149,8 +149,21 @@ header .wrapper {
   position: relative;
   justify-content: space-between;
 }
+
+nav { 
+  position: absolute;
+  align-items: center;
+  top: 40px;
+  right: 0;
+}
+
+.right-container { display: flex; }
 /* nav ul { justify-content: center; } */
-.nav-anc { border: 1px solid transparent; }
+.nav-anc { 
+  padding: 5px;
+  border: 1px solid transparent;
+}
+
 .search-text { display: none; }
 
 .dropdown > a:after {
@@ -575,6 +588,7 @@ h2 {
 nav ul,
 form { display: flex; }
 
+nav { top: 50px; }
 .sub-menu { position: absolute; }
 form input { width: 80%; }
 
@@ -595,7 +609,7 @@ nav ul li a {
 /* .search-text { display: none; } */
 .nav-link { right: 0; }
 header .wrapper { position: relative; }
-nav ul { gap: 20px; } 
+/* nav ul { gap: 20px; }  */
 
 .card-section .wrapper {
   width: 100%;
