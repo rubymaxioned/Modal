@@ -34,6 +34,7 @@ window.addEventListener('click', function (e) {
 //search
 var searchBtn = document.querySelector('.search-button');
 var searchText = document.querySelector('.search-text');
+var nav = document.querySelector('nav ul');
 
 searchBtn.addEventListener('click', function () {
     console.log("working");
@@ -43,22 +44,18 @@ searchBtn.addEventListener('click', function () {
 //hamburger
 var hamburger = document.querySelector('.bar');
 var cross = document.querySelector('.hamburger .cross');
-var navLink = document.querySelectorAll('.nav-link');
-console.log(navLink);
+var nav = document.querySelector('nav');
+console.log(nav);
 
 hamburger.addEventListener('click', function () {
     console.log("working");
     hamburger.classList.add('hide');
     cross.classList.add('show');
-    navLink.forEach(function (list) {
-        list.classList.add('show');
-    })
+    nav.classList.add('show');
 })
 
 cross.addEventListener('click', function () {
     cross.classList.remove('show');
     hamburger.classList.remove('hide');
-    navLink.forEach(function (list) {
-        list.classList.remove('show');
-    })
+    nav.classList.remove('show');
 })
