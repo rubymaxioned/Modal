@@ -180,6 +180,17 @@ form {
   align-items: center;
 }
 
+.cross::before {
+  color: #fff;
+  content: '\f00d';
+}
+
+.hamburger .cross { display: none; }
+.hamburger { display: flex; }
+
+.btn:hover,
+.hamburger:hover .bar::before { color: rgb(255, 0, 0); }
+
 /*=================================
   Header styling ends here
 =================================*/  
