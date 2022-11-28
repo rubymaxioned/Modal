@@ -685,7 +685,11 @@ nav ul li a {
 
 
 .dropdown { position: relative; }
-.sub-menu { right: 0px; }
+
+.sub-menu { 
+  top: 30px;
+  left: 0;
+}
 } 
 
 /*media query for 1536px starts here*/
