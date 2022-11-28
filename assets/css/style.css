@@ -219,6 +219,7 @@ form {
 .hamburger .cross { display: none; }
 .hamburger { display: flex; }
 
+.hamburger .show { display: block; }
 .btn:hover,
 .hamburger:hover .bar::before,
 .hamburger:hover.cross::before { color: rgb(255, 0, 0); }
