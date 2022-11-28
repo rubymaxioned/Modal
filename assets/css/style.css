@@ -688,7 +688,7 @@ header .wrapper {
 
 .banner-section .wrapper { min-height: 632px; }
 header { padding-top: 56px; }
-header .wrapper { gap: 34px; }
+header .wrapper { gap: 28px; }
 
 .nav-container {
   width: 543px;
@@ -697,15 +697,31 @@ header .wrapper { gap: 34px; }
 
 nav { flex-basis: 90%; }
 
+.nav-anc.active,
+.nav-anc:hover { 
+  color: #ff0000;
+  border: 2px solid #999;}
+
+nav ul,
+.dropdown { gap: 8px; } 
+
+h2 { margin-bottom: 0px; }
+.banner-content { bottom: 100px;}
+
 nav ul li { 
-  padding: 10px 20px;
+  padding: 6px 20px;
   flex: 1 1 20%;
 }
 
 nav ul li a {
-  font-size: 13px;
+  font-size: 9px;
   letter-spacing: 1px;
 }
+
+/* .nav-link:nth-of-type(1) { border: 2px solid #999;
+} 
+
+.nav-link:nth-of-type(1) a { color: #ff0000;} */
 
 .dropdown { display: flex;}
 
