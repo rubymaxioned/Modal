@@ -132,12 +132,11 @@ nav {
 }
 
 nav ul {
-  /* display: none; */
+  display: flex;
   top: 30px;
   right: 0;
-  flex-direction: column;
   align-items: center;
-  display: flex;
+  flex-direction: column;
 }
 
 header .wrapper {
@@ -153,13 +152,13 @@ header .wrapper {
 nav {
   display: none;
   position: absolute;
-  align-items: center;
   top: 40px;
   right: 0;
+  align-items: center;
 }
 
 .right-container { display: flex; }
-/* nav ul { justify-content: center; } */
+
 .nav-anc { 
   padding: 5px;
   border: 1px solid transparent;
@@ -174,14 +173,6 @@ nav {
   font-size: 9px;
 }
 
-/* nav ul { position: relative; } */
-
-/* .nav-link { 
-  display: none;
-  position: absolute;
-  right: 0;
-} */
-
 .sub-menu {
   width: 95px;
   display: none;
@@ -190,13 +181,6 @@ nav {
   right: 75px;
   flex-direction: column;
 }
-
-/* .dropdown { width: 70px; } */
-/* .nav-link:nth-of-type(1) { top: 30px;} 
-.nav-link:nth-of-type(2) { top: 50px;} 
-.nav-link:nth-of-type(3) { top: 70px;} 
-.nav-link:nth-of-type(4) { top: 90px;} 
-.nav-link:nth-of-type(5) { top: 110px;}  */
 
 nav ul li a { 
   color: #999;
@@ -285,7 +269,6 @@ h2::first-letter,
 }
 
 .icon {
-  /* display: inline-block; */
   position: relative;
   text-indent: -9999px;
 }
@@ -611,10 +594,8 @@ nav ul li a {
 }
 
 .dropdown { width: 87px; }
-/* .search-text { display: none; } */
 .nav-link { right: 0; }
 header .wrapper { position: relative; }
-/* nav ul { gap: 20px; }  */
 
 .card-section .wrapper {
   width: 100%;
@@ -690,8 +671,8 @@ header .wrapper {
 nav{ top: 0; }
 
 nav ul {     
-  flex-direction: row;
   align-items: center;
+  flex-direction: row;
 }
 
 nav ul li a {
@@ -699,13 +680,10 @@ nav ul li a {
   font-size: 9px;
   letter-spacing: 1px;
 }
-} 
-
-/*media query for 1024px starts here*/
-@media only screen and (min-width: 1024px) {
 
 
-
+.dropdown { position: relative; }
+.sub-menu { right: 0px; }
 } 
 
 /*media query for 1536px starts here*/
@@ -806,11 +784,11 @@ h1 { position: relative; }
 
 h1::before { 
   padding: 5px 4%;
-  content: 'city';
   position: absolute;
   top: -30px;
   left: -50px;
   background: #fff;
+  content: 'city';
   font-size: 7px;
   text-transform: uppercase;
 }
