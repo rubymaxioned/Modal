@@ -223,7 +223,7 @@ form {
 
 .btn:hover,
 .hamburger:hover .bar::before,
-.hamburger:hover.cross::before { color: rgb(255, 0, 0); }
+.hamburger:hover .cross::before { color: rgb(255, 0, 0); }
 
 .read-more a:hover {
   background-color: #fff;
