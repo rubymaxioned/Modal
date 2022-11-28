@@ -697,7 +697,7 @@ nav ul li a {
 
 .banner-section .wrapper { min-height: 632px; }
 header { padding-top: 56px; }
-header .wrapper { gap: 28px; }
+header .wrapper { gap: 25px; }
 
 .nav-container {
   width: 543px;
@@ -800,5 +800,6 @@ h1::before {
 }
 
 .btn::before { font-size: 12px; }
+.nav-anc { padding: 10px 20px; }
 }
 
