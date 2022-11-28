@@ -175,7 +175,11 @@ nav ul li a {
 
 .dropdown a::after { padding-left: 8px; }
 
-/* h1::before { content: 'city';} */
+form { 
+  display: flex;
+  align-items: center;
+}
+
 /*=================================
   Header styling ends here
 =================================*/  
@@ -732,12 +736,13 @@ h1::before {
   padding: 5px 4%;
   content: 'city';
   position: absolute;
-  top: -25px;
-  left: -55px;
+  top: -30px;
+  left: -50px;
   background: #fff;
-  font-size: 12px;
+  font-size: 7px;
   text-transform: uppercase;
 }
+
+.btn::before { font-size: 12px; }
 }
 
-} 
