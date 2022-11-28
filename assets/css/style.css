@@ -191,6 +191,17 @@ form {
 .btn:hover,
 .hamburger:hover .bar::before { color: rgb(255, 0, 0); }
 
+.read-more a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.prev:hover::before,
+.next:hover::before { color: red; }
+
+.prev:hover,
+.next:hover { background: #fff; }
+
 /*=================================
   Header styling ends here
 =================================*/  
