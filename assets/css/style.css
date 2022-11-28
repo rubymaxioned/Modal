@@ -145,7 +145,11 @@ nav ul { justify-content: center; }
 }
 
 nav ul { position: relative; }
-.nav-link { position: absolute; }
+
+.nav-link { 
+  display: none;
+  position: absolute;
+}
 
 .sub-menu {
   width: 150px;
@@ -168,6 +172,10 @@ nav ul li a {
   font-size: 9px;
   text-transform: uppercase;
 }
+
+.dropdown a::after { padding-left: 8px; }
+
+/* h1::before { content: 'city';} */
 /*=================================
   Header styling ends here
 =================================*/  
@@ -597,7 +605,23 @@ header .wrapper {
 
 .icon::before { font-size: 15px; }
 .sub-menu { display: none; }
-.nav-link { position: static; }
+
+.nav-link { 
+  display: block;
+  position: static; 
+}
+
+.nav-anc.active,
+.nav-anc:hover { 
+  border: 2px solid #999;
+  color: #ff0000;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+  font-size: 9px;
+  letter-spacing: 1px;
+}
 } 
 
 /*media query for 1024px starts here*/
@@ -621,37 +645,23 @@ header .wrapper { gap: 28px; }
 
 nav { flex-basis: 90%; }
 
-.nav-anc.active,
-.nav-anc:hover { 
-  border: 2px solid #999;
-  color: #ff0000;
-}
-
 nav ul,
-.dropdown { gap: 8px; } 
+.dropdown { gap: 22px; } 
 
 h2 { margin-bottom: 0px; }
-.banner-content { bottom: 100px;}
 
-nav ul li { flex: 1 1 20%; }
-
-nav ul li a {
-  padding: 10px 20px;
-  font-size: 9px;
-  letter-spacing: 1px;
+.banner-content { 
+  padding-left: 156px;
+  bottom: 100px;
 }
 
+nav ul li { flex: 1 1 20%; }
 .dropdown { display: flex;}
 .banner-section .wrapper { width: 100%; }
 
 h2 { font-size: 84px; }
 .banner-content p {font-size: 29px; }
 .read-more a { padding: 14px 7.5%; }
-
-.banner-content { 
-  padding-left: 156px;
-  bottom: 94px;
-} 
 
 .arrow { 
   top: initial;
