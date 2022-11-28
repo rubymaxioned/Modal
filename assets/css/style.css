@@ -220,6 +220,7 @@ form {
 .hamburger { display: flex; }
 
 .hamburger .show { display: block; }
+
 .btn:hover,
 .hamburger:hover .bar::before,
 .hamburger:hover.cross::before { color: rgb(255, 0, 0); }
@@ -345,7 +346,8 @@ h2::first-letter,
 }
 
 .bar,
-.btn {
+.btn,
+.cross {
   width: 30px;
   height: 30px;
 }
