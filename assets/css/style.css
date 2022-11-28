@@ -137,7 +137,7 @@ nav ul { justify-content: center; }
 .nav-anc { border: 1px solid transparent; }
 .search-text { display: none; }
 
-.dropdown a::after {
+.dropdown .nav-anc::after {
   color: #999;
   content: '\f078';
   font-family: "FontAwesome";
@@ -149,6 +149,7 @@ nav ul { position: relative; }
 .nav-link { 
   display: none;
   position: absolute;
+  right: 0;
 }
 
 .sub-menu {
@@ -189,7 +190,8 @@ form {
 .hamburger { display: flex; }
 
 .btn:hover,
-.hamburger:hover .bar::before { color: rgb(255, 0, 0); }
+.hamburger:hover .bar::before,
+.hamburger:hover.cross::before { color: rgb(255, 0, 0); }
 
 .read-more a:hover {
   background-color: #fff;
@@ -250,7 +252,7 @@ h2::first-letter,
 }
 
 .icon {
-  display: inline-block;
+  /* display: inline-block; */
   position: relative;
   text-indent: -9999px;
 }
@@ -507,7 +509,8 @@ footer figure,
 @media only screen and (min-width: 480px) {
 .icon::before { font-size: 18px; }
 
-.card-content p, .latest-section p { 
+.card-content p,
+.latest-section p { 
   font-size: 13px;
   line-height: 26px;
 }
@@ -573,7 +576,7 @@ nav ul li a {
 }
 
 .dropdown { width: 87px; }
-.search-text { display: none; }
+/* .search-text { display: none; } */
 .nav-link { right: 0; }
 header .wrapper { position: relative; }
 nav ul { gap: 20px; } 
@@ -721,7 +724,6 @@ h3 {
 }
 
 .card-content .read-more { justify-content: flex-start;}
-
 .latest-section .read-more { justify-content: center; }
 
 .card-content .read-more a,
