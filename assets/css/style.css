@@ -672,6 +672,7 @@ header .wrapper {
 .icon::before { font-size: 15px; }
 /* nav ul li a { padding: 5px 10%; } */
 .sub-menu { display: none; }
+.nav-link { position: static; }
 } 
 
 
@@ -695,12 +696,18 @@ header .wrapper { gap: 34px; }
 }
 
 nav { flex-basis: 90%; }
-nav ul li { flex: 1 1 20%; }
+
+nav ul li { 
+  padding: 10px 20px;
+  flex: 1 1 20%;
+}
 
 nav ul li a {
-  font-size: 10px;
+  font-size: 13px;
   letter-spacing: 1px;
 }
+
+.dropdown { display: flex;}
 
 .banner-section .wrapper { width: 100%; }
 
