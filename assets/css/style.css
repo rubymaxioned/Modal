@@ -151,6 +151,10 @@ nav ul {
   justify-content: center;
 }
 
+.nav-anc {
+  border: 1px solid transparent;
+}
+
 /* .nav-link { display: none; } */
 .search-text { display: none; }
 
