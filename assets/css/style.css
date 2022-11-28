@@ -125,6 +125,12 @@ header {
   z-index: 2;
 }
 
+nav { 
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
 header .wrapper,
 nav ul {
   display: flex;
@@ -133,7 +139,7 @@ nav ul {
 }
 
 header .wrapper { justify-content: space-between; }
-nav ul { justify-content: center; }
+/* nav ul { justify-content: center; } */
 .nav-anc { border: 1px solid transparent; }
 .search-text { display: none; }
 
@@ -144,7 +150,7 @@ nav ul { justify-content: center; }
   font-size: 9px;
 }
 
-nav ul { position: relative; }
+/* nav ul { position: relative; } */
 
 .nav-link { 
   display: none;
