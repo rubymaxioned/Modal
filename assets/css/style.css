@@ -235,7 +235,7 @@ form {
 .banner-section {
   width: 100%;
   height: auto;
-  background: url(/assets/Images/banner.jpg) no-repeat center center/cover;
+  background: url(../Images/banner.jpg) no-repeat center center/cover;
 }
 
 .banner-section .wrapper { 
