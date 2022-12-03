@@ -173,13 +173,13 @@ nav {
   font-size: 9px;
 }
 
-.dropdown { position: relative; }
+/* .dropdown { position: relative; } */
 
 .sub-menu {
   width: 95px;
   display: none;
   position: absolute;
-  top: 0;
+  top: 65px;
   right: 75px;
   flex-direction: column;
 }
@@ -217,7 +217,7 @@ form {
 }
 
 .prev:hover::before,
-.next:hover::before { color: red; }
+.next:hover::before { color: #ff0000; }
 
 .prev:hover,
 .next:hover { background: #fff; }
@@ -584,8 +584,8 @@ form input { width: 80%; }
 
 .sub-menu {
   position: absolute;
-  top: 0;
-  right: 100%;
+  top: 30px;
+  right: 50px;
   flex-direction: column;
 }
 
@@ -685,10 +685,7 @@ nav ul li a {
 
 .dropdown { position: relative; }
 
-.sub-menu { 
-  top: 30px;
-  left: 0;
-}
+.sub-menu { right: 0px; }
 } 
 
 /*media query for 1536px starts here*/
@@ -799,6 +796,6 @@ h1::before {
 }
 
 .btn::before { font-size: 12px; }
-.nav-anc { padding: 10px 20px; }
+/* .nav-anc { padding: 10px 20px; } */
 }
 
