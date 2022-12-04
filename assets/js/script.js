@@ -9,7 +9,6 @@ readBtn.forEach(function (btn) {
     })
 })
 
-
 topClose.addEventListener('click', function () {
     modal.classList.remove('show');
 })
@@ -43,24 +42,30 @@ searchBtn.addEventListener('click', function () {
 })
 
 //hamburger
-var hamburger = document.querySelector('.bar');
-var cross = document.querySelector('.hamburger .cross');
+// var hamburger = document.querySelector('.bar');
+// var cross = document.querySelector('.hamburger .cross');
+var navToggle = document.querySelector('.hamburger-toggle');
+var hamburger = document.querySelector('.hamburger');
 var nav = document.querySelector('nav');
 var subMenu = document.querySelector('.sub-menu');
 var dropDown = document.querySelector('.dropdown')
 console.log(subMenu);
 
-hamburger.addEventListener('click', function () {
-    hamburger.classList.add('hide');
-    cross.classList.add('show');
-    nav.classList.add('show');
+navToggle.addEventListener('click', function () {
+    hamburger.classList.toggle('open');
 })
 
-cross.addEventListener('click', function () {
-    cross.classList.remove('show');
-    hamburger.classList.remove('hide');
-    nav.classList.remove('show');
-})
+// hamburger.addEventListener('click', function () {
+//     hamburger.classList.add('hide');
+//     cross.classList.add('show');
+//     nav.classList.add('show');
+// })
+
+// cross.addEventListener('click', function () {
+//     cross.classList.remove('show');
+//     hamburger.classList.remove('hide');
+//     nav.classList.remove('show');
+// })
 
 dropDown.addEventListener('click', function () {
     // subMenu.forEach(function(list){
