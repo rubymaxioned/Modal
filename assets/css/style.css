@@ -157,7 +157,7 @@ nav {
   align-items: center;
 }
 
-.right-container { display: flex; }
+/* .right-container { display: flex; } */
 
 .nav-anc { 
   padding: 5px;
@@ -197,19 +197,57 @@ form {
   align-items: center;
 }
 
-.cross::before {
-  color: #fff;
-  content: '\f00d';
+.hamburger-toggle { 
+  min-width: 30px;
+  min-height: 20px;
+  /* padding: 5px; */
+  position: relative;
+  background-color: #999;
 }
 
-.hamburger .cross { display: none; }
+.hamburger {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #000;
+  transition: 100ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+}
+
+.hamburger::before { transform: translateY(-5px); }
+.hamburger::after { transform: translateY(5px); } 
+
+.hamburger.open { transform: translateX(-10px) translateY(-2px) rotate(45deg); }
+.hamburger.open::before { opacity: 0; }
+.hamburger.open::after { transform: rotate(90deg); } */
+
+/* .cross::before {
+  color: #fff;
+  content: '\f00d';
+} */
+
+/* .hamburger .cross { display: none; } */
 .hamburger { display: flex; }
 
 .hamburger .show { display: block; }
 
-.btn:hover,
+/* .btn:hover,
 .hamburger:hover .bar::before,
-.hamburger:hover .cross::before { color: rgb(255, 0, 0); }
+.hamburger:hover .cross::before { color: rgb(255, 0, 0); } */
 
 .read-more a:hover {
   background-color: #fff;
