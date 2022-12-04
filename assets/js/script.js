@@ -1,7 +1,3 @@
-var readBtn = document.querySelectorAll(".read-more");
-var modal = document.querySelector(".modal-box");
-var topClose = document.querySelector(".close");
-var bottomClose = document.querySelector(".modal-box ul li:nth-of-type(1)");
 
 readBtn.forEach(function (btn) {
     btn.addEventListener('click', function () {
