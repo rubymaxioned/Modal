@@ -288,10 +288,20 @@ form {
 }
 
 .slider-images li {
-  background: url(/assets/Images/banner.jpg) no-repeat center center/cover;
+  /* background: url(/assets/Images/banner.jpg) no-repeat center center/cover; */
   width: 100%;
   min-height: 275px
 }
+
+.slider-images figure img { min-height: 350px; }
+
+.slider-images li:nth-of-type(2),
+.slider-images li:nth-of-type(3) {
+  display: none;
+}
+
+.nav-container { display: flex; }
+
 
 h2 {
   margin-bottom: 5px;
