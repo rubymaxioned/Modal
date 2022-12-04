@@ -302,6 +302,13 @@ form {
 
 .nav-container { display: flex; }
 
+.search-text input {
+  width: 50%;
+  /* right: -74px; */
+  left: 43%;
+  position: relative;
+}
+
 
 h2 {
   margin-bottom: 5px;
