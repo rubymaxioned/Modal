@@ -111,12 +111,12 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-h1 { max-width: 40%; }
+header figure { max-width: 40%; }
 
-.bar::before {
+/* .bar::before {
   color: #fff;
   content: '\f0c9';
-}
+} */
 
 header {
   width: 100%;
