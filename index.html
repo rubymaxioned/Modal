@@ -16,14 +16,14 @@
       <!--header section start-->
       <header>
         <div class="wrapper">
-          <h1><a href="#FIXME" title="Logo"><img src="https://placehold.jp/390x70.png" alt="Logo Image"></a></h1>
+          <figure><a href="index.html" title="Logo"><img src="https://placehold.jp/390x70.png" alt="Logo Image"></a></figure>
           <div class="nav-container">
             <nav>
-              <ul>
-                <li class="nav-link"><a href="#FIXME" title="Home" class="nav-anc active">home</a></li>
-                <li class="nav-link"><a href="#FIXME" title="About" class="nav-anc">about</a></li>
-                <li class="nav-link"><a href="#FIXME" title="Parts" class="nav-anc">parts</a></li>
-                <li class="nav-link dropdown">
+              <ul class="nav-menu">
+                <li><a href="#FIXME" title="Home" class="nav-anc active">home</a></li>
+                <li><a href="#FIXME" title="About" class="nav-anc">about</a></li>
+                <li><a href="#FIXME" title="Parts" class="nav-anc">parts</a></li>
+                <li class="dropdown">
                   <a href="#FIXME" title="Dropdown" class="nav-anc">dropdown</a>
                   <ul class="sub-menu">
                     <li><a href="#FIXME" title="Sub Menu1" class="nav-anc">sub menu1</a></li>
@@ -31,11 +31,10 @@
                     <li><a href="#FIXME" title="Sub Menu3" class="nav-anc">sub menu3</a></li>
                   </ul>
                 </li>
-                <li class="nav-link"><a href="#FIXME" title="contact" class="nav-anc">contact</a></li>
+                <li><a href="#FIXME" title="contact" class="nav-anc">contact</a></li>
               </ul>
             </nav>  
-            <div class="right-container">
-                <div class="search">
+            <div class="search">
                     <form action="#FIXME" method="Post">
                       <div class="search-text">
                         <input type="text" name="search">
@@ -44,11 +43,9 @@
                         <button type="button" class="icon btn">search</button>
                       </div>
                     </form>
-                </div>   
-                <div class="hamburger">
-                  <span class="icon bar">bar</span>
-                  <span class="icon cross">cross</span>    
-                </div>
+            </div>   
+            <div class="hamburger-toggle">
+              <span class="hamburger"></span>
             </div>
           </div>
         </div>
@@ -57,25 +54,56 @@
       <!--main section start-->
       <main>
         <!--banner section start-->
-        <div class="banner-section">
+        <secttion class="banner-section">
           <div class="wrapper">
-            <div class="banner-content">
-              <h2>live longer</h2>
-              <p>let us move you to your new life.</p>
-              <div class="read-more">
-                <a href="#FIXME" title="Read More">read more</a>
-              </div>
-            </div>
+            <ul class="slider-images">
+              <li>
+                <figure>
+                  <img src="./assets/Images/banner.jpg" alt="Slider Image 1">
+                </figure>
+                <div class="banner-content">
+                  <h1>live longer</h1>
+                  <p>let us move you to your new life.</p>
+                  <div class="read-more">
+                    <a href="#FIXME" title="Read More">read more</a>
+                  </div>
+                </div>
+                </li>
+              <li>
+                <figure>
+                  <img src="./assets/Images/banner.jpg" alt="Slider Image 1">
+                </figure>
+                <div class="banner-content">
+                  <h1>live longer</h1>
+                  <p>let us move you to your new life.</p>
+                  <div class="read-more">
+                    <a href="#FIXME" title="Read More">read more</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <figure>
+                  <img src="./assets/Images/banner.jpg" alt="Slider Image 1">
+                </figure>
+                <div class="banner-content">
+                  <h1>live longer</h1>
+                  <p>let us move you to your new life.</p>
+                  <div class="read-more">
+                    <a href="#FIXME" title="Read More">read more</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
             <ul class="arrow">
-              <li class="icon prev">left arrow</li>
-              <li class="icon next">right arrow</li>
+            <li class="icon prev"><a href="#FIXME" title="Left arrow">left arrow</a></li>
+            <li class="icon next"><a href="#FIXME" title="Right arrow">right arrow</a></li>
             </ul>
           </div>
-        </div>
+        </secttion>
         <!--banner section end-->
 
         <!--card section start-->
-        <div class="card-section">
+        <section class="card-section">
           <div class="wrapper">
             <figure>
               <img src="./assets/Images/smoother1.jpg" alt="Bicycle Image 1">
@@ -88,29 +116,17 @@
                 <div class="read-more">
                   <a href="#FIXME" title="Read More">read more</a>
                 </div>
-                <div class="modal-box">
-                  <div class="modal-content">
-                    <span class="icon close">close</span>
-                    <figure>
-                      <img src="./assets/Images/smoother1.jpg" alt="Modal Image1">
-                    </figure>
-                    <ul>
-                      <li><a href="#FIXME" title="Close">close</a></li>
-                      <li><a href="#FIXME" title="Close">save changes</a></li>
-                    </ul>
-                  </div>
-                </div>
               </div>
               <figure>
                 <img src="./assets/Images/smoother2.jpg" alt="Bicycle Image 2">
               </figure>
             </div>
           </div>
-        </div>
+        </section>
         <!--card section end-->
 
         <!--latest section start-->
-        <div class="latest-section">
+        <section class="latest-section">
           <div class="wrapper">
             <h4>latest products</h4>
             <p>Lorem ipsum dolor sit amet consecteur adipisicing elit sedc dnmo eiusmod tempor incididunt consecteur adipisicing elit sedc labore et dolore magna aliqua uta enim ad minim ven iam quis nostrud exercitation ullamco. Sed semper leo metus, a lacinia eros semper at, Etiam sodales orci sit amet vehicula pellentesque. Lorem ipsum dolor sit amet consectetur adipiscicing elit sedc dnmo eiusmod tempor incididunt ut labore.</p>
@@ -118,16 +134,30 @@
               <a href="#FIXME" title="Read More">read more</a>
             </div>
           </div>
-        </div>
+        </section>
         <!--latest section end-->
 
+        <!--modal section start-->
+        <section class="modal-box">
+          <div class="modal-content">
+            <span class="icon close"><a href="#FIXME" title="Close">close</a></span>
+            <figure>
+              <img src="./assets/Images/smoother1.jpg" alt="Modal Image1">
+            </figure>
+            <ul>
+              <li><a href="#FIXME" title="Close">close</a></li>
+              <li><a href="#FIXME" title="Save changes">save changes</a></li>
+            </ul>
+          </div>
+        </section>
+        <!--modal section end-->
       </main>
       <!--main section end-->
       <!--footer section start-->
       <footer>    
         <div class="wrapper">
           <figure>
-            <img src="https://placehold.jp/350x62.png" alt="Footer Logo Image">
+            <a href="#FIXME" title="Bicycle logo"><img src="https://placehold.jp/350x62.png" alt="Footer Logo Image"></a>
           </figure>
           <div class="footer-bottom">
             <p>&#169; 2022 City Bicycle. All Rights Reserved Design by <span>W3layouts</span></p>
