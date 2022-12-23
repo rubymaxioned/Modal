@@ -863,6 +863,7 @@ h1::before {
 }
 
 .btn::before { font-size: 12px; }
+.slider-images { min-height: 500px; }
 /* .nav-anc { padding: 10px 20px; } */
 }
 
