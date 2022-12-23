@@ -767,6 +767,8 @@ nav ul li a {
 
 .dropdown { position: relative; }
 .sub-menu { right: 0px; }
+
+.slider-images figure img { min-height: 450px; }
 } 
 
 /*media query for 1536px starts here*/
