@@ -161,7 +161,7 @@ nav {
 
 .nav-anc { 
   padding: 5px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 }
 
 .search-text { display: none; }
@@ -200,7 +200,7 @@ form {
 .hamburger-toggle { 
   min-width: 30px;
   min-height: 20px;
-  /* padding: 5px; */
+  border-radius: 5px;
   position: relative;
   background-color: #999;
 }
@@ -249,17 +249,6 @@ form {
 .hamburger:hover .bar::before,
 .hamburger:hover .cross::before { color: rgb(255, 0, 0); } */
 
-.read-more a:hover {
-  background-color: #fff;
-  color: #000;
-}
-
-.prev:hover::before,
-.next:hover::before { color: #ff0000; }
-
-.prev:hover,
-.next:hover { background: #fff; }
-
 .sub-menu.active{ display: block; }
 /*=================================
   Header styling ends here
@@ -293,14 +282,20 @@ form {
   min-height: 275px
 }
 
-.slider-images figure img { min-height: 350px; }
+.slider-images figure img { 
+  min-height: 350px;
+  object-fit: cover;
+}
 
 .slider-images li:nth-of-type(2),
 .slider-images li:nth-of-type(3) {
   display: none;
 }
 
-.nav-container { display: flex; }
+.nav-container { 
+  display: flex;
+  gap: 10px;
+}
 
 .search-text input {
   width: 50%;
@@ -396,6 +391,7 @@ h2::first-letter,
 .banner-content {
   position: absolute;
   bottom: 30px;
+  left: 12%;
 }
 
 .bar,
@@ -408,6 +404,11 @@ h2::first-letter,
 .header-right {
   display: flex;
   align-items: center;
+}
+
+h1 {
+  color: #fff;
+  font-size: 40px
 }
 
 /*banner section end*/
@@ -700,12 +701,41 @@ header .wrapper { position: relative; }
   border: 2px solid #999;
   color: #ff0000;
 }
+
+.read-more a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.prev:hover::before,
+.next:hover::before { 
+  color: #ff0000;
+}
+
+.prev:hover,
+.next:hover { 
+  background: #fff;
+}
+
+.slider-images figure img { min-height: 450px; }
+
+.arrow,
+.hamburger-toggle {
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.banner-content { bottom: 50px; }
 }
 
 
 /*media query for 995px starts here*/
 @media only screen and (min-width: 995px) {
-.hamburger { display: none; }
+.hamburger-toggle { display: none; }
 
 nav { 
   display: block;
@@ -742,6 +772,7 @@ nav{ top: 0; }
 nav ul {     
   align-items: center;
   flex-direction: row;
+  gap: 10px;
 }
 
 nav ul li a {
@@ -863,7 +894,7 @@ h1::before {
 }
 
 .btn::before { font-size: 12px; }
-.slider-images { min-height: 500px; }
+.slider-images { min-height: 450px; }
 /* .nav-anc { padding: 10px 20px; } */
 }
 
